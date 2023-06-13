@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "Tela principal";
+}
+@model projeto_test.Entidades.Medicamentos
+
+<div class="container-fluid  logo_center">
+    <div class="card-body">
+        <div class="row ">
+            <div class="col-12 col-lg-2 col-md-3 col-sm-3 col-xl-3 ">
+                <div class="">
+                    <img src="img/CaixadeRemédio.png" class="caixa_remedio" alt="...">
+                </div>
+            </div>
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-8">
+                <div class="card border-0 mb-3">
+                    <form method="get">
+                        <h3 class="text_busca">Qual Remédio você busca?</h3>
+                        <h5 class="text_sobre_pesquisa">
+                            Pesquise para saber
+                            em quais centros de distribuição ele está disponivel
+                        </h5>
+                        <div class="input-group test">
+                            <input type="text" name="busca" class="pesquisa_remedio   p-3 " placeholder="Digite aqui seu remédio. exemplo: clonazepam">
+                            <button class="btn btn-secondary" type="submit" ><img src="~/img/Lupa.svg" class="lupa"/></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid  table mt-5">
+    <div class="card-body">
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12 border border-dark  Tab_result ">
+            <table class="table table-hover ">
+                <thead>
+                    <tr>
+                        <th scope="col" class="local text-center">local</th>
+                        <th scope="col" class="medicamento text-center">medicamento</th>
+                        <th scope="col" class="disponibilidade  text-center">disponibilidade</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="card-body">
+        <h2 class="text-center texto_saiba">Saiba onde fica localizada as UBSs:</h2>
+    </div>
+</div>
+<div class="container-fluid border-1">
+    <div class="card-body">
+        <div class="row justify-content-evenly">
+            <div class="col-12 col-lg-2 col-md-2 col-sm-2 col-xl-12 border border-dark cards">
+                <div class="col-12 col-lg-2 col-md-2 col-sm-2 col-xl-12 border border-dark cards_obs">
+                    <div class="card" style="width: 100%;height:100%;">
+                        <img src="/img/OBSdrNevioOzzetti.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card  <a href="https://www.procuraqueacha.com.br/ubs/7626304/usf-dr-nevio-ozetti">saiba mais</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-2 col-md-2 col-sm-2 col-xl-12 border border-dark cards_obs">
+                    <div class="card" style="width: 100%;height:100%;">
+                        <img src="/img/OBSdrNevioOzzetti.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card  <a href="https://www.procuraqueacha.com.br/ubs/7626304/usf-dr-nevio-ozetti">saiba mais</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2 col-md-2 col-sm-2 col-xl-12 border border-dark cards">
+                <div class="col-12 col-lg-2 col-md-2 col-sm-2 col-xl-12 border border-dark cards_obs">
+                    <div class="card" style="width: 100%;height:100%;">
+                        <img src="/img/OBSdrNevioOzzetti.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card  <a href="https://www.procuraqueacha.com.br/ubs/7626304/usf-dr-nevio-ozetti">saiba mais</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-2 col-md-2 col-sm-2 col-xl-12 border border-dark cards_obs">
+                    <div class="card" style="width: 100%;height:100%;">
+                        <img src="/img/OBSdrNevioOzzetti.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card  <a href="https://www.procuraqueacha.com.br/ubs/7626304/usf-dr-nevio-ozetti">saiba mais</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid border-1 margin_bottom_card">
+    <div class="card-body">
+        <div class="row justify-content-evenly ">
+            <div class="col-12 col-lg-2 col-md-2 col-sm-2 col-xl-6  bg-secondary cards_prop">
+                .
+            </div>
+            <div class="col-12 col-lg-2 col-md-2 col-sm-2 col-xl-6 bg-secondary cards_prop">
+                .
+            </div>
+        </div>
+    </div>
+</div>
