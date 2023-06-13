@@ -7,7 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<Contexto>(
-    option => option.UseSqlServer("Server=18.229.173.72\\APIMOBILE2023,1433;Database=INFOMED;User Id=sa;Password=991292994@eD;")
+
+    option => option.UseSqlServer("Server=201.55.32.20;Database=INFOMED;User Id=pw_tarde;Password=aluno123;Encrypt=True; TrustServerCertificate=true;")
+    //option => option.UseSqlServer("Server=18.229.173.72\\APIMOBILE2023,1433;Database=INFOMED;User Id=sa;Password=991292994@eD;")
     //option => option.UseSqlServer("Server=c3po;Database= ;Trusted_Connection=True;")
     );
 

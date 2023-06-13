@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Tela principal";
 }
-@model projeto_test.Entidades.Medicamentos
+@model List<projeto_test.Entidades.Medicamentos>
 
 <div class="container-fluid  logo_center">
     <div class="card-body">
@@ -13,7 +13,7 @@
             </div>
             <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-8">
                 <div class="card border-0 mb-3">
-                    <form method="get">
+                    <form method="get" action="/Home/Index">
                         <h3 class="text_busca">Qual Remédio você busca?</h3>
                         <h5 class="text_sobre_pesquisa">
                             Pesquise para saber
@@ -41,7 +41,15 @@
                     </tr>
                 </thead>
                 <tbody class="text-center">
-                   
+                   @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td></td>
+                            <td>@item.Nome</td>
+                            <td></td>
+                            
+                        </tr>
+                    }
                 </tbody>
             </table>
         </div>
